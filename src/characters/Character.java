@@ -4,24 +4,7 @@ public class Character {
     String name;
     int health;
     int strength;
-    int damage;
-    int attack;
 
-    public int getAttack() {
-        return attack;
-    }
-
-    public void setAttack(int attack) {
-        this.attack = attack;
-    }
-
-    public int getDamage() {
-        return damage;
-    }
-
-    public void setDamage(int damage) {
-        this.damage = damage;
-    }
 
     public int getHealth() {
         return health;

@@ -2,18 +2,28 @@ package scenarios;
 
 import characters.Character;
 
-public class Battle implements Scenario{
+public class Battle implements Scenario {
+    private int enemyStrength;
+
+    public Battle(int enemyStrength) {
+        this.enemyStrength = enemyStrength;
+    }
 
     @Override
     public void execute(Character character) {
-        character.getAttack();
-        character.setAttack(29);
+        int characterStrength = character.getStrength();
+        System.out.println("The battle begins!");
 
-        System.out.println("The Battle has started with" + character.getName());
-        System.out.println("The fighter recieved damage");
-        System.out.println("The Battle has ended by the winner");
+        if (characterStrength >= enemyStrength) {
+            System.out.println("You are victorious! You defeated the enemy.");
+
+        } else {
+
+            System.out.println("You have been defeated! The enemy was too strong.");
+
+
+        }
+
 
     }
-
-
-    }
+}
