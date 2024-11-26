@@ -6,6 +6,7 @@ public class Character {
     int strength;
 
 
+
     public int getHealth() {
         return health;
     }
