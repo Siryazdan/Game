@@ -14,7 +14,7 @@ public class GameEngine {
     private Scanner scanner = new Scanner(System.in);
 
     public GameEngine() {
-        this.player = new Character("The Beast", 150);
+        this.player = new Character("The Dragon", 150, 15);
 
     }
 

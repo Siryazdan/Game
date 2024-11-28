@@ -5,9 +5,10 @@ public class Character {
     int health;
     int strength;
 
-    public Character(String name, int health) {
+    public Character(String name, int health, int strength) {
         this.name = name;
         this.health = health;
+        this.strength = strength;
     }
 
     public int getStrength() {
