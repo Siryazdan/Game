@@ -5,6 +5,27 @@ public class Character {
     int health;
     int strength;
 
+    public Character(String name, int health) {
+        this.name = name;
+        this.health = health;
+    }
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
 
     public int getHealth() {
@@ -15,19 +36,7 @@ public class Character {
         this.health = health;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getStrength() {
-        return strength;
-    }
-
-    public void setStrength(int strength) {
-        this.strength = strength;
-    }
 }
+
+
+
