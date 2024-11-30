@@ -1,14 +1,14 @@
 package characters;
 
 public class Character {
-    String name;
-    int health;
-    int strength;
+    private String name;
+    private int health;
+    private int strength;
 
     public Character(String name, int health, int strength) {
-        this.name = name;
-        this.health = health;
-        this.strength = strength;
+        this.setName(name);
+        this.setHealth(health);
+        this.setStrength(strength);
     }
 
     public int getStrength() {
