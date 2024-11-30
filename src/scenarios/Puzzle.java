@@ -10,7 +10,7 @@ public class Puzzle implements Scenario {
     private String question;
     private String answer;
 
-    public Puzzle(Scanner scanner, String question, String answer) {
+    public Puzzle(String question, String answer) {
         this.scanner = new Scanner(System.in);
         this.question = question;
         this.answer = answer;

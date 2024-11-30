@@ -1,5 +1,7 @@
 package game;
 
+import scenarios.Battle;
+import scenarios.Puzzle;
 import scenarios.Scenario;
 import characters.Character;
 
@@ -14,7 +16,9 @@ public class GameEngine {
     private Scanner scanner = new Scanner(System.in);
 
     public GameEngine() {
-        this.player = new Character("The Dragon", 150, 15);
+        this.player = new Character("The Dragon", 150, 40);
+        scenarios.add(new Battle(5, 50));
+        scenarios.add(new Puzzle("The answer of life, the universe and everything?", "42"));
 
     }
 
@@ -30,8 +34,7 @@ public class GameEngine {
 
             if (player.getHealth() <= 0) {
                 System.out.println("You are dead!");
-                gameRunning = false;
-                continue;
+                break;
             }
             System.out.println("Do you wish to continue? (yes/no");
             String input = scanner.nextLine();
